@@ -40,3 +40,24 @@
     display: inline-block;
     font-size: 16px;
 }
+th,
+td {
+  border: 1px solid #0acfa9;
+  margin: 0px 0px;
+  padding: 5px 5px;
+}
+tr{
+  text-align: center;
+}
+table {
+  display: block;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+th {
+  background-color: #04AA6D;
+  color: white;
+}
+tr:hover {
+  background-color: coral;
+}

@@ -29,7 +29,7 @@ export const Editor=()=>
   }
   return (
     <div>
-      <div className='editorTop'>
+      <div className='editorTop' style={{margin:"10px"}}>
         <div  style={{marginRight:"10px"}}>
           <button className='clearButton'><img src={redo} alt="clear" onClick={()=>{setCode("")}} height={18} width={20}/></button>
         </div>

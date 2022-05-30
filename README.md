@@ -1,8 +1,27 @@
-# Getting Started with Create React App
+# Deployed on Netlify
+https://celadon-dolphin-2467a9.netlify.app/
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Performance Metrics
+
+### Google lighthouse report on production build hosted on Netlify 
+
+![Screenshot from 2022-05-30 19-30-29](https://user-images.githubusercontent.com/65249542/171009799-4fb9dbd5-c1c0-4647-9987-23739ab5b8b6.png)
+
+### Google lighthouse report on development build running on localhost
+
+![Screenshot from 2022-05-30 19-31-12](https://user-images.githubusercontent.com/65249542/171009974-26ff781f-550a-44b1-a54b-7e335b03047f.png)
+
+## Steps taken for better Loadtime
+
+- Code Splitting using React Lazy
+- Minimizing use of npm packages 
+- Analysing npm packages before adding them using https://bundlephobia.com/
+
 
 ## Available Scripts
+
+
 
 In the project directory, you can run:
 

@@ -19,13 +19,16 @@ function App() {
         <div style={{margin:"10px"}}><h3 style={{color:"#0acfa9"}}>SQL Editor</h3></div>
       </div>
       <Suspense fallback={<div class="loader"></div>}>
-      <SplitPane split="vertical"
-      defaultSize={"60%"}
-      resizerStyle={styles}>
-        <CsvToTable style={{position: "relative !important",}}/>
-        <Editor style={{position: "relative !important",}}/>
-      </SplitPane>
-      </Suspense>
+        <SplitPane split="vertical"
+          defaultSize={"60%"}
+          resizerStyle={styles}
+          minSize={200}
+          maxSize={1200}
+        >
+          <CsvToTable/>
+          <Editor />
+        </SplitPane>
+        </Suspense>
     </div>
   );
 }

@@ -76,3 +76,4 @@ export const CsvToTable=()=>{
         </div>
     );
 }
+export default CsvToTable;

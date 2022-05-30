@@ -3,7 +3,7 @@ import { useState } from 'react';
 import redo from "../assets/redo.png"
 export const Editor=()=>
 {
-  const [code, setCode] = useState(`SELECT * FROM Customers \nORDER BY Country ASC, CustomerName DESC;`);
+  const [code, setCode] = useState(`SELECT employeeID FROM employees \nWHERE lastName=Peacock;`);
   const [output,setOutput]=useState("");
   function callAPI(){
       /*
@@ -24,11 +24,15 @@ export const Editor=()=>
         });
 
       */
-     setOutput("null");
-     return "";
+     if(code===`SELECT employeeID FROM employees \nWHERE lastName=Peacock;`)
+     {
+       setOutput("4")
+     }
+     else
+      setOutput("null");
   }
   return (
-    <div>
+    <div className='editorContainer'>
       <div className='editorTop' style={{margin:"10px"}}>
         <div  style={{marginRight:"10px"}}>
           <button className='clearButton'><img src={redo} alt="clear" onClick={()=>{setCode("")}} height={18} width={20}/></button>
@@ -54,10 +58,11 @@ export const Editor=()=>
           minHeight:"80%",
         }}
       />
-      <div>
+      <div  style={{margin:"5px"}}>
         <h3>Output:</h3>
         <div>{output}</div>
       </div>
     </div>
   );
 }
+export default Editor;

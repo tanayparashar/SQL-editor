@@ -1,7 +1,8 @@
 .App {
   background-color: #18191a;
+  display: block;
   color: rgb(255, 255, 255);
-  min-height: 100vh;
+  height: 100vh;
 }
 .navbar{
   overflow: hidden;
@@ -11,14 +12,7 @@
   display: flex;
   justify-content: flex-end;
 }
-.etitor>div {
-  background-color: #f1f1f1;
-  width: 100px;
-  margin: 10px;
-  text-align: center;
-  line-height: 75px;
-  font-size: 30px;
-}
+
 .runButton{
   background-color: #6cae49;
   /* Green */
@@ -60,4 +54,11 @@ th {
 }
 tr:hover {
   background-color: coral;
+}
+.Pane1,
+.Pane2 {
+  overflow: auto;
+}
+.Pane2::-webkit-scrollbar {
+  display: none;
 }

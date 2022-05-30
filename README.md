@@ -17,6 +17,7 @@ https://celadon-dolphin-2467a9.netlify.app/
 - Code Splitting using React Lazy
 - Minimizing use of npm packages 
 - Analysing npm packages before adding them using https://bundlephobia.com/
+- Followed React best practices
 
 
 ## Available Scripts
